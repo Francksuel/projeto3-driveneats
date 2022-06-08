@@ -1,4 +1,22 @@
 body {
     font-family: 'Roboto', sans-serif;
+   }
+   .topo {
+       width: 100%;
+       padding: 8px 0 0 21px;
+       height: 92px;
+       background-color: #CF2B2B;
+       position: fixed;
+       top: 0;
+       left: 0;
+   }
+   h1 {
     font-family: 'Righteous', cursive;
+    font-size: 44px;
+    color:#ffffff;
+    line-height: 54px;
+   }
+   h2 {
+       font-size: 18px;
+       color:#ffffff;
    }
