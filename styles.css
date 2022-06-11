@@ -1,6 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #e5e5e5;
+    background-color: #eeeeee;
 }
 
 * {
@@ -11,6 +11,9 @@ body {
     width: 100%;
     height: 92px;
     padding: 8px 0 0 21px;
+    -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     background-color: #CF2B2B;
     position: fixed;
     top: 0;
@@ -53,11 +56,34 @@ h2 {
     justify-content: space-between;
     padding: 13px;
     margin: 0 8px;
+    -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    position: relative;
+}
+
+.select {
+    box-shadow: 0 0 0 5px #32B72F inset;
+}
+
+.pedido ion-icon {   
+    color: #32B72F;
+    height: 19px;
+    width: 19px;
+    position: absolute;
+    right: 11px;
+    bottom: 14px;
+}
+
+.hide {
+   display: none;
 }
 
 .pedidos>div {
     display: flex;
-    margin: 0 11px;
+    height: 230px;
+    align-items: center;
+    padding: 0 11px;
     overflow-x: scroll;
 }
 
@@ -99,8 +125,14 @@ button {
     padding: 0 20%;
     height: 61px;
     background-color: #CBCBCB;
-    font-size: 20px;
+    font-weight: 400;
+    font-size: 20px;    
     color: #FFFFFF;
-    border-radius:50px ;
-   
+    border-radius: 50px;
+
+}
+
+.completed {
+    background-color: #32B72F;
+    font-weight: 700;
 }
