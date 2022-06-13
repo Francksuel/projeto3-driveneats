@@ -78,5 +78,5 @@ let nome = prompt("Qual seu nome?")
 let endereco = prompt("Qual endereço de entrega?")
 let mensagem = (`Olá, gostaria de fazer o pedido:\n- Prato: ${item1}\n- Bebida: ${item2}\n- Sobremesa: ${item3}\nTotal: R$ ${total.toFixed(2)}\n\nNome: ${nome}\nEndereço: ${endereco}`);
 mensagem = encodeURIComponent(mensagem)
-window.open(`https://wa.me/5584998551416?text=${mensagem}`,'_blank')
+window.location.href=`https://wa.me/5584998551416?text=${mensagem}`
 }
